@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button
+      defaultHref="/"
+      text="Back"
+      color="primary">
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title>Iniciar sesion</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-input placeholder="Ingrese correo"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input placeholder="Ingrese contraseña"></ion-input>
+  </ion-item>
+  <ion-button routerLink="#">
+    Iniciar sesion
+  </ion-button>
+  <ion-button routerLink="/registrar-usuario">
+    no tengo cuenta
+  </ion-button>
+</ion-content>
