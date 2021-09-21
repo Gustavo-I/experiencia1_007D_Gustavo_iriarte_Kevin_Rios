@@ -1,0 +1,105 @@
+<ion-header [translucent]="true">
+  <script type="module">
+    import { alertController } from 'https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/index.esm.js';
+  </script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <body>
+    
+    <ion-app>
+      <ion-header translucent>
+        <ion-toolbar>
+          <ion-searchbar></ion-searchbar>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content fullscreen>
+        <ion-list>
+          <ion-item>Santander 
+            <ion-button (click)="presentAlert()">
+            Ver Tarjeta
+          </ion-button>
+        </ion-item>
+          <ion-item>Banco Estado
+            <ion-button (click)="presentAlert()">
+            Ver Tarjeta
+          </ion-button>
+        </ion-item>
+          <ion-item>Mach
+            <ion-button (click)="presentAlert()">
+            Ver Tarjeta
+          </ion-button>
+        </ion-item>
+          <ion-item>BCI
+            <ion-button (click)="presentAlert()">
+            Ver Tarjeta
+          </ion-button>
+        </ion-item>
+          <ion-item>Gustavo
+            <ion-button (click)="presentAlert()">
+            Ver Tarjeta
+          </ion-button>
+        </ion-item>
+          <ion-item>Kevin
+            <ion-button (click)="presentAlert()">
+            Ver Tarjeta
+          </ion-button>
+        </ion-item>
+        <ion-item>Banco Carlos
+          <ion-button (click)="presentAlert()">
+          Ver Tarjeta
+        </ion-button>
+        </ion-item>
+        <ion-item>Banco de Mexico
+          <ion-button (click)="presentAlert()">
+          Ver Tarjeta
+          </ion-button>
+        </ion-item>
+        <ion-item>Pedro Bank
+          <ion-button (click)="presentAlert()">
+          Ver Tarjeta
+          </ion-button>
+        </ion-item>
+        <ion-item>Banco Musulman
+          <ion-button (click)="presentAlert()">
+          Ver Tarjeta
+          </ion-button>
+        </ion-item>  
+        <ion-item>WallSteet Bank
+          <ion-button (click)="presentAlert()">
+          Ver Tarjeta
+          </ion-button>
+        </ion-item>
+        <ion-item>SkinClub
+          <ion-button (click)="presentAlert()">
+          Ver Tarjeta
+          </ion-button>
+        </ion-item>      
+        </ion-list>
+      </ion-content>
+    </ion-app>
+  
+    <script>
+      const searchbar = document.querySelector('ion-searchbar');
+      const items = Array.from(document.querySelector('ion-list').children);
+  
+      searchbar.addEventListener('ionInput', handleInput);
+  
+      function handleInput(event) {
+        const query = event.target.value.toLowerCase();
+        requestAnimationFrame(() => {
+          items.forEach(item => {
+            const shouldShow = item.textContent.toLowerCase().indexOf(query) > -1;
+            item.style.display = shouldShow ? 'block' : 'none';
+          });
+        });
+      }
+    </script>
+  </body>
+
+
+</ion-content>
