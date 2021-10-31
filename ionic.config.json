@@ -1,0 +1,7 @@
+{
+  "name": "trabajogus",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
