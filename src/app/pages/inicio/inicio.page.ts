@@ -17,30 +17,19 @@ export class InicioPage implements OnInit {
 
   componentes : Componente[] =[
     {
-      icon: 'paw-outline',
-      name: 'Action Sheet', 
-      redirecTo: '/action-sheet'
-    },
-    {
       icon: 'sunny-outline', 
-      name: 'Alert', 
-      redirecTo: '/alert'
-    },
-    {
-      icon: 'bug-outline', 
-      name: 'Input', 
-      redirecTo: '/input'
+      name: 'Tarjetas', 
+      redirecTo: '/suscripcion'
     },
     {
       icon: 'alarm-outline', 
       name: 'Noticias', 
       redirecTo: '/noticias'
     },
-     
     {
-      icon: 'sunny-outline', 
-      name: 'Suscripcion', 
-      redirecTo: '/suscripcion'
+      icon: 'paw-outline',
+      name: 'FAQ', 
+      redirecTo: '/action-sheet'
     }
    
    

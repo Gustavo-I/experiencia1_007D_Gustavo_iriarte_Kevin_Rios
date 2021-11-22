@@ -1,0 +1,7 @@
+{
+  "name": "registroStorage",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

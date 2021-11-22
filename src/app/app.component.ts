@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-
 interface Componente{
   icon: string;
   name: string;
@@ -15,23 +14,13 @@ interface Componente{
 })
 export class AppComponent {
   
-  constructor() {}
+
 
   componentes : Componente[] =[
     {
-      icon: 'paw-outline',
-      name: 'Action Sheet', 
-      redirecTo: '/action-sheet'
-    },
-    {
       icon: 'sunny-outline', 
-      name: 'Alert', 
-      redirecTo: '/alert'
-    },
-    {
-      icon: 'bug-outline', 
-      name: 'Input', 
-      redirecTo: '/input'
+      name: 'Mis Tarjetas', 
+      redirecTo: '/suscripcion'
     },
     {
       icon: 'alarm-outline', 
@@ -39,10 +28,11 @@ export class AppComponent {
       redirecTo: '/noticias'
     },
     {
-      icon: 'sunny-outline', 
-      name: 'Suscripcion', 
-      redirecTo: '/suscripcion'
+      icon: 'paw-outline',
+      name: 'FAQ', 
+      redirecTo: '/action-sheet'
     }
+
    
    
   ]

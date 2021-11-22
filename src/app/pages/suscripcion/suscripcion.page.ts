@@ -22,8 +22,8 @@ import { Platform, ToastController, IonList} from '@ionic/angular';
        {
         this.plt.ready().then(()=>{
           this.loadDatos();
-        });
-      }
+      });
+    }
   
     ngOnInit() {
     }
