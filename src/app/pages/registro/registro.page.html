@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar color="primary">
+  <ion-toolbar color="Dark">
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
@@ -33,14 +33,17 @@
     <ion-label position="floating">Contraseña</ion-label>
     <ion-input type="password" [(ngModel)]="newRegistro.contrasena" required></ion-input>
   </ion-item>
-
-  <ion-button (click)="addDatos()" expand="block" color="primary">
+  <br>
+  <ion-button class="text" (click)="addDatos()" expand="block" color="primary">
     Registrarse
   </ion-button>
-      <ion-card-subtitle>
-        <ion-button color="primary" href="/login/login.page">
+      <ion-card-subtitle class="cuenta">
+        <ion-button color="primary" routerLink="/login">
         ¿Ya tienes cuenta?
         </ion-button>
+        <ion-tab-button color="withe" routerLink="/datos">
+          Ir a "¿Que deseas hacer?"
+        </ion-tab-button>
     </ion-card-subtitle>
    
 </ion-content>
