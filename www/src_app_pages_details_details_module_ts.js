@@ -1,4 +1,4 @@
-(self["webpackChunktrabajogus"] = self["webpackChunktrabajogus"] || []).push([["src_app_pages_details_details_module_ts"],{
+(self["webpackChunkhola_proyecto"] = self["webpackChunkhola_proyecto"] || []).push([["src_app_pages_details_details_module_ts"],{
 
 /***/ 6244:
 /*!*********************************************************!*\

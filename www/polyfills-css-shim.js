@@ -1,4 +1,4 @@
-(self["webpackChunktrabajogus"] = self["webpackChunktrabajogus"] || []).push([["polyfills-css-shim"],{
+(self["webpackChunkhola_proyecto"] = self["webpackChunkhola_proyecto"] || []).push([["polyfills-css-shim"],{
 
 /***/ 1800:
 /*!****************************************************************!*\

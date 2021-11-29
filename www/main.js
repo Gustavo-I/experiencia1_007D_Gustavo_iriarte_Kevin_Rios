@@ -1,4 +1,4 @@
-(self["webpackChunktrabajogus"] = self["webpackChunktrabajogus"] || []).push([["main"],{
+(self["webpackChunkhola_proyecto"] = self["webpackChunkhola_proyecto"] || []).push([["main"],{
 
 /***/ 8255:
 /*!*******************************************************!*\
@@ -42,8 +42,12 @@ __webpack_require__.r(__webpack_exports__);
 const routes = [
     {
         path: '',
-        redirectTo: 'inicio',
+        redirectTo: 'datos',
         pathMatch: 'full'
+    },
+    {
+        path: 'login',
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_pages_login_login_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/login/login.module */ 1053)).then(m => m.LoginPageModule)
     },
     {
         path: 'inicio',
@@ -52,14 +56,6 @@ const routes = [
     {
         path: 'action-sheet',
         loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_pages_action-sheet_action-sheet_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/action-sheet/action-sheet.module */ 4922)).then(m => m.ActionSheetPageModule)
-    },
-    {
-        path: 'alert',
-        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_pages_alert_alert_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/alert/alert.module */ 1182)).then(m => m.AlertPageModule)
-    },
-    {
-        path: 'input',
-        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_pages_input_input_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/input/input.module */ 7999)).then(m => m.InputPageModule)
     },
     {
         path: 'noticias',
@@ -72,6 +68,14 @@ const routes = [
     {
         path: 'details',
         loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_pages_details_details_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/details/details.module */ 557)).then(m => m.DetailsPageModule)
+    },
+    {
+        path: 'registro',
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_pages_registro_registro_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/registro/registro.module */ 8712)).then(m => m.RegistroPageModule)
+    },
+    {
+        path: 'datos',
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_pages_datos_datos_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/datos/datos.module */ 1048)).then(m => m.DatosPageModule)
     },
 ];
 let AppRoutingModule = class AppRoutingModule {
@@ -112,19 +116,9 @@ let AppComponent = class AppComponent {
     constructor() {
         this.componentes = [
             {
-                icon: 'paw-outline',
-                name: 'Action Sheet',
-                redirecTo: '/action-sheet'
-            },
-            {
                 icon: 'sunny-outline',
-                name: 'Alert',
-                redirecTo: '/alert'
-            },
-            {
-                icon: 'bug-outline',
-                name: 'Input',
-                redirecTo: '/input'
+                name: 'Mis Tarjetas',
+                redirecTo: '/suscripcion'
             },
             {
                 icon: 'alarm-outline',
@@ -132,14 +126,13 @@ let AppComponent = class AppComponent {
                 redirecTo: '/noticias'
             },
             {
-                icon: 'sunny-outline',
-                name: 'Suscripcion',
-                redirecTo: '/suscripcion'
+                icon: 'paw-outline',
+                name: 'FAQ',
+                redirecTo: '/action-sheet'
             }
         ];
     }
 };
-AppComponent.ctorParameters = () => [];
 AppComponent = (0,tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([
     (0,_angular_core__WEBPACK_IMPORTED_MODULE_3__.Component)({
         selector: 'app-root',
@@ -191,9 +184,9 @@ AppModule = (0,tslib__WEBPACK_IMPORTED_MODULE_3__.__decorate)([
         entryComponents: [],
         imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_5__.BrowserModule, _ionic_angular__WEBPACK_IMPORTED_MODULE_6__.IonicModule.forRoot(), _app_routing_module__WEBPACK_IMPORTED_MODULE_1__.AppRoutingModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_7__.HttpClientModule,
             _ionic_storage_angular__WEBPACK_IMPORTED_MODULE_8__.IonicStorageModule.forRoot({
-                name: 'mySuscripcion',
+                name: 'mydb',
                 driverOrder: [_ionic_storage__WEBPACK_IMPORTED_MODULE_2__.Drivers.IndexedDB, _ionic_storage__WEBPACK_IMPORTED_MODULE_2__.Drivers.LocalStorage]
-            }),],
+            })],
         providers: [{ provide: _angular_router__WEBPACK_IMPORTED_MODULE_9__.RouteReuseStrategy, useClass: _ionic_angular__WEBPACK_IMPORTED_MODULE_6__.IonicRouteStrategy }],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_0__.AppComponent],
     })

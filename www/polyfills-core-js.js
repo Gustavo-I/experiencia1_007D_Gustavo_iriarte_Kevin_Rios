@@ -1,4 +1,4 @@
-(self["webpackChunktrabajogus"] = self["webpackChunktrabajogus"] || []).push([["polyfills-core-js"],{
+(self["webpackChunkhola_proyecto"] = self["webpackChunkhola_proyecto"] || []).push([["polyfills-core-js"],{
 
 /***/ 7656:
 /*!****************************************************************!*\

@@ -1,4 +1,4 @@
-(self["webpackChunktrabajogus"] = self["webpackChunktrabajogus"] || []).push([["src_app_pages_inicio_inicio_module_ts"],{
+(self["webpackChunkhola_proyecto"] = self["webpackChunkhola_proyecto"] || []).push([["src_app_pages_inicio_inicio_module_ts"],{
 
 /***/ 5652:
 /*!*******************************************************!*\
@@ -107,19 +107,9 @@ let InicioPage = class InicioPage {
         this.menuController = menuController;
         this.componentes = [
             {
-                icon: 'paw-outline',
-                name: 'Action Sheet',
-                redirecTo: '/action-sheet'
-            },
-            {
                 icon: 'sunny-outline',
-                name: 'Alert',
-                redirecTo: '/alert'
-            },
-            {
-                icon: 'bug-outline',
-                name: 'Input',
-                redirecTo: '/input'
+                name: 'Tarjetas',
+                redirecTo: '/suscripcion'
             },
             {
                 icon: 'alarm-outline',
@@ -127,9 +117,9 @@ let InicioPage = class InicioPage {
                 redirecTo: '/noticias'
             },
             {
-                icon: 'sunny-outline',
-                name: 'Suscripcion',
-                redirecTo: '/suscripcion'
+                icon: 'paw-outline',
+                name: 'FAQ',
+                redirecTo: '/action-sheet'
             }
         ];
     }
@@ -180,7 +170,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<ion-header >\n  <ion-toolbar>\n\n    <ion-buttons slot=\"start\">\n      <ion-button (click)=\"mostrarMenu()\">\n        <ion-icon slot=\"icon-only\" name=\"menu-outline\"></ion-icon>\n         \n      </ion-button>\n    </ion-buttons>\n\n    <ion-buttons slot=\"end\">\n      <ion-avatar>\n        <ion-img src=\"/assets/icon/Gato.jpg\"></ion-img>\n      </ion-avatar>\n    </ion-buttons>\n\n    <ion-title>inicio</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content class=\"ion-padding\">\n   \n    <ion-list>\n      <ion-item *ngFor=\"let c of componentes\"\n          [routerLink] = \"c.redirecTo\"\n          detail=\"true\"> \n          <ion-icon [name]=\"c.icon\"\n            slot=\"start\"\n            color=\"primary\"></ion-icon> \n            {{c.name}}\n      </ion-item>\n   </ion-list>\n\n   <!--\n   <ion-button routerLink=\"/alert\">Alert</ion-button>\n   <ion-button routerLink=\"/action-sheet\">Action Sheet</ion-button>-->\n\n    \n</ion-content>\n");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<ion-header >\n  <ion-toolbar>\n\n    <ion-buttons slot=\"start\">\n      <ion-button (click)=\"mostrarMenu()\">\n        <ion-icon slot=\"icon-only\" name=\"menu-outline\"></ion-icon>\n         \n      </ion-button>\n    </ion-buttons>\n\n    <ion-buttons slot=\"end\">\n      <ion-avatar>\n        <ion-img src=\"/assets/icon/Gato.jpg\"></ion-img>\n      </ion-avatar>\n    </ion-buttons>\n    \n    <ion-title>inicio</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content class=\"ion-padding\">\n   \n    <ion-list>\n      <ion-item *ngFor=\"let c of componentes\"\n          [routerLink] = \"c.redirecTo\"\n          detail=\"true\"> \n          <ion-icon [name]=\"c.icon\"\n            slot=\"start\"\n            color=\"primary\"></ion-icon> \n            {{c.name}}\n      </ion-item>\n   </ion-list>\n\n\n    \n</ion-content>\n");
 
 /***/ })
 
